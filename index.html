@@ -1,41 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma Vitrine Publicitaire</title>
-    <style>.photo-site {
-    width: 100%;       /* L'image prend toute la largeur de son conteneur */
-    max-width: 300px;  /* Mais elle ne dépassera jamais 300 pixels */
-    height: auto;      /* Garde les proportions pour ne pas déformer l'image */
-    display: block;
-    margin: 10px auto; /* Centre l'image horizontalement */
-}
-        /* --- STYLE GENERAL --- */
+    
+    <style>
+        /* --- LE STYLE (CSS) --- */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f9f9f9;
             margin: 0;
             padding: 20px;
-        }<div class="carte-produit">
-    <img src="images/ma-photo.jpg" alt="Description de mon produit" class="photo-site">
-</div>
+        }
 
-        h1 { text-align: center; color: #333; }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
 
-        /* --- LA GRILLE DE PRODUITS --- */
         .grille-produits {
             display: grid;
-            /* Crée 3 colonnes sur PC, s'adapte sur mobile */
+            /* Crée des colonnes automatiques */
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        /* --- CARTE PRODUIT --- */
         .carte {
             background: white;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 15px;
+            text-align: center;
